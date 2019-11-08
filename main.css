@@ -1,0 +1,118 @@
+body {
+    display: block;
+    margin: 10px;
+}
+html,
+body {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: #6F90FF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    display: block;
+    margin: 10px;
+    /* background: url(code.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.socialbtns { 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    text-align: center; 
+    
+    @media (min-width: 600px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.social { 
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    text-align: center; 
+    
+    @media (min-width: 600px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.codenation {
+    width: 250px;
+    height: 100px;
+    left: 500px;
+    top: 500px;
+}
+.codenation:hover{
+    filter: invert(100%);
+   /* background-color: #83e2ff; */
+   
+}
+.codenation:hover{
+    transform: rotate(360deg);
+    transition: all 1.5s;
+}
+
+.codenation, .facebook, .github, .instagram {
+    padding: 5%;
+}
+.facebook {
+    width: 250px;
+    height: 100px;
+    left: 500px;
+    top: 500px;
+}
+.facebook:hover{
+    transition: all 1.5s;
+    animation: beat 1.5s both infinite;
+}
+.github {
+    width: 250px;
+    height: 100px;
+    left: 500px;
+    top: 500px;
+}
+.github:hover{
+    filter: invert(100%);
+    transform: scale(1.1);
+    transition: all 1.5s;
+}
+
+.instagram {
+    width: 250px;
+    height: 100px;
+    left: 500px;
+    top: 500px;
+}
+.instagram:hover{
+    animation: skew 5s both infinite;
+}
+@keyframes beat {
+    0%{transform: scale(1)}
+    50%{transform: scale(2)}
+    100%{transform: scale(1)}
+}
+@keyframes skew {
+    0%{transform: scale(1) skew(0)}
+    33%{transform: scale(1.5) skew(-5deg)}
+    66%{transform: scale(1.5) skew(5deg)}
+    100%{transform: scale(1) skew(0)}
+}
